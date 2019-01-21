@@ -37,6 +37,7 @@ header ul a {
 
 header ul a:hover {
     text-decoration: none;
+    color: #0077ff;
 }
 
 /* Hero Content */
@@ -85,20 +86,26 @@ header ul a:hover {
     cursor: pointer;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 10px 75px;
+    padding: 10px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    color: gray;
+    color: #0077ff;
     background: transparent;
 }
 
+.hero-btn:hover {
+    background: #7070703f;
+}
+
 .hero-btn a {
+    padding: 10px 150px;
     text-decoration: none;
-    color: black;
+    color: #707070;
 }
 
 .hero-btn a:hover {
     text-decoration: none;
+    color: #0077ff;
 }
 
 /* Hero Media Query */
@@ -145,7 +152,7 @@ header ul a:hover {
     }
     
     .hero-content h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 15px;
     }
     
@@ -153,11 +160,15 @@ header ul a:hover {
         cursor: pointer;
         border: 3px solid black;
         border-radius: 10px;
-        padding: 10px 50px;
+        padding: 10px 0;
         font-size: 1.0rem;
         font-weight: 600;
         color: gray;
         background: transparent;
+    }
+
+    .hero-btn a {
+        padding: 10px 50px;
     }
 
 }
@@ -222,12 +233,18 @@ header ul a:hover {
         cursor: pointer;
         border: 3px solid white;
         border-radius: 10px;
-        padding: 10px 75px;
+        padding: 10px 0;
         font-size: 1.5rem;
         font-weight: 600;
-        color: black;
         background: transparent;
+        color: #0077ff !important;
     }
+
+    .hero-btn a {
+        padding: 10px 70px;
+        color: black;
+    }
+
 }
 /*End of Hero Media Query*/
 
@@ -544,16 +561,22 @@ header ul a:hover {
     overflow: hidden;
 }
 
+.landscape-desc {
+    display: none;
+}
+
 /* contact media query */
 @media only screen and (max-width: 850px) and (orientation : landscape){
     .contact {
         overflow-x: hidden;
         width: 100%;
-        padding: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .contact-content {
         height: 100%;
+        margin-top: 30px;
     }
 
     form .flex-orientation {
@@ -581,12 +604,39 @@ header ul a:hover {
         align-items: center;
         justify-content: space-between;
         margin-right: 20px;
+        width: 50%;
     }
 
     .contact .btn-contact {
         border: 3px solid black;
         font-size: 1rem;
         color: #0077ff;
+    }
+
+    .file-btn {
+        cursor: pointer !important;
+        border: 2px solid gray;
+        color: #0077ff;
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .selected-file {
+        border: none;
+        font-size: 10px;
+        padding: 5px 5px;
+        background-color: white;
+        color: black;
+        display: inline;
+        overflow: hidden;
+    }
+
+    .landscape-desc {
+        display: block;
+        font-size: 18px;
     }
 }
     
