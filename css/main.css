@@ -368,7 +368,7 @@ header ul a:hover {
 }
 /* end of leather work media query*/
 
-/* Testimonials Content */
+/* Products Content */
 .products {
     background-color: white;
     height: 125vh;
@@ -405,8 +405,8 @@ header ul a:hover {
 .card {
     width: 30%;
     height: 80%;
-    border-radius: 10px;
-    border: 5px solid rgba(0, 0, 0, 0.233);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.233) !important;
 }
 
 
