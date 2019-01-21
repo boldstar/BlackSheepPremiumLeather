@@ -508,6 +508,42 @@ header ul a:hover {
     border-radius: 5px;
 }
 
+.upload-btn-wrapper {
+    cursor: pointer !important;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+.file-btn {
+    cursor: pointer !important;
+    border: 2px solid gray;
+    color: #0077ff;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+    cursor: pointer !important;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.selected-file {
+    border: none;
+    padding: 5px 5px;
+    background-color: white;
+    color: black;
+    display: inline;
+    overflow: hidden;
+}
+
 /* contact media query */
 @media only screen and (max-width: 850px) and (orientation : landscape){
     .contact {
