@@ -495,7 +495,7 @@ header ul a:hover {
     }
     
     .card img {
-       height: 100px;
+       height: 120px;
     }
 
     .card:nth-child(odd) {
@@ -507,10 +507,15 @@ header ul a:hover {
     }
     .products-content .card-body h4 {
         padding: 2px;
+        margin-bottom: 0;
     }
 
     .card-body p {
         display: none;
+    }
+
+    div .card-footer {
+        padding-top: 2px;
     }
 }
 /*End of testimonial media query*/
