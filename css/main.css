@@ -86,24 +86,16 @@ header ul a:hover {
     cursor: pointer;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 10px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #0077ff;
+    color: #707070;
     background: transparent;
+    padding: 10px 150px;
+    text-decoration: none;
 }
 
 .hero-btn:hover {
     background: #7070703f;
-}
-
-.hero-btn a {
-    padding: 10px 150px;
-    text-decoration: none;
-    color: #707070;
-}
-
-.hero-btn a:hover {
     text-decoration: none;
     color: #0077ff;
 }
@@ -160,19 +152,91 @@ header ul a:hover {
         cursor: pointer;
         border: 3px solid black;
         border-radius: 10px;
-        padding: 10px 0;
+        padding: 10px 50px;
         font-size: 1.0rem;
         font-weight: 600;
         color: gray;
         background: transparent;
     }
 
-    .hero-btn a {
-        padding: 10px 50px;
+}
+    
+@media only screen and (max-width: 1450px){
+    header {
+        justify-content: center;
+    }
+
+    .nav-links {
+        padding: 20px 0;
+        margin-right: 0;
+        display: flex;
+        
+    }
+    
+    header ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    
+    header ul li{
+        margin-left: 0;
+        margin: 15px;
+    }
+    
+    header ul a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(white 75%, #707070 100%)
+    }
+
+    .hero .background-img {
+        display: none;
+    }
+
+    .hero-content {
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    
+        
+    .hero-logo {
+        display: block;
+        visibility: visible;
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        display: none;
+    }
+    
+    .hero-content h4 {
+        display: none;
+    }
+    
+    .hero-btn {
+        margin-top: 50px;
+        cursor: pointer;
+        border: 3px solid white;;
+        border-radius: 10px;
+        padding: 10px 40px;
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: black;
+        background: transparent;
     }
 
 }
-    
 @media only screen and (max-width: 600px){
     header {
         justify-content: center;
@@ -203,6 +267,8 @@ header ul a:hover {
 
     .hero {
         background-image: linear-gradient(white 50%, #707070 100%);
+        display: flex;
+        justify-content: center;
     }
 
     .hero .background-img {
@@ -212,12 +278,16 @@ header ul a:hover {
     .hero-content {
         align-self: center;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0;
     }
     
     .hero-logo {
-        display: inline;
+        display: block;
         visibility: visible;
+        height: 350px;
     }
 
     .hero-content h1 {
@@ -233,16 +303,13 @@ header ul a:hover {
         cursor: pointer;
         border: 3px solid white;
         border-radius: 10px;
-        padding: 10px 0;
         font-size: 1.5rem;
         font-weight: 600;
         background: transparent;
-        color: #0077ff !important;
-    }
-
-    .hero-btn a {
-        padding: 10px 70px;
-        color: black;
+        color: #0077ff ;
+        padding: 10px 10px;
+        color: black !important;
+        width: 75%;
     }
 
 }
@@ -371,7 +438,7 @@ header ul a:hover {
 /* Products Content */
 .products {
     background-color: white;
-    height: 125vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -480,10 +547,6 @@ header ul a:hover {
     .products-section-two .card-body {
         padding: 5px !important;
     }
-
-    .card-body p {
-        display: none;
-    }
 }
     
 @media only screen and (max-width: 600px){
@@ -535,10 +598,6 @@ header ul a:hover {
     .card-body h4 {
         padding: 2px;
         margin-bottom: 0;
-    }
-
-    .card-body p {
-        display: none;
     }
 
     div .card-footer {
@@ -743,6 +802,7 @@ header ul a:hover {
         background-color: white;
         align-self: center;
         border-radius: 0;
+        padding: 20px !important;
     }
     
     .contact .btn-contact {
