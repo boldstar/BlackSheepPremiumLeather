@@ -44,8 +44,6 @@ header ul a:hover {
 .hero {
     position: relative;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -57,7 +55,8 @@ header ul a:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 	z-index: -1;
 }
 
@@ -164,6 +163,7 @@ header ul a:hover {
 @media only screen and (max-width: 1450px){
     header {
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .nav-links {
@@ -329,6 +329,7 @@ header ul a:hover {
     color: white;
     padding: 25px;
     letter-spacing: 2px;
+    font-size: 3em;
 }
 
 .showcase-body {
@@ -451,6 +452,7 @@ header ul a:hover {
     padding-bottom: 0;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    font-size: 3em;
 }
 
 .products .products-section-one{
