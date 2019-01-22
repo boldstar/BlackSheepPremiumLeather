@@ -16,7 +16,7 @@
   }
   
   #mainNav .navbar-brand {
-    color: #707070;
+    color: #a9a9a9;
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px;
@@ -192,7 +192,7 @@
 
     .hero-content {
         margin-right: 0;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
     }
 
     .ram-img {
@@ -200,7 +200,7 @@
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-bottom: 0;
         color: white;
     }
@@ -505,7 +505,7 @@
 }
 
 /* contact media query */
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 996px){
     .contact {
         position: relative;
         background-color: #707070;
@@ -538,18 +538,27 @@
         display: none;
     }
     
+    .contact-details h3 {
+        margin-bottom: 25px;
+    }
+    
+    .contact-details .contact-info {
+        margin-bottom: 35px;
+    }
+    
     .contact-inputs {
         width: 100%;
         text-align: left;
     }
     
     .contact .btn-contact {
-        border: 2px solid #707070 !important;
+        border: 2px solid #707070;
         font-size: 1.5rem;
+        color: #0077ff;
     }
     
     .file-upload {
-        border: 1px solid #7070705d;
+        border: 1px solid #707070;
         border-radius: 5px;
     }
     
@@ -565,7 +574,7 @@
         border: 2px solid gray;
         color: #0077ff;
         background-color: white;
-        padding: 5px 5px;
+        padding: 5px 15px;
         border-radius: 8px;
         font-size: 12px;
         font-weight: bold;
@@ -582,12 +591,12 @@
     
     .selected-file {
         border: none;
-        padding: 3px 2px;
-        font-size: 10px;
+        padding: 5px 5px;
         background-color: white;
         color: black;
         display: inline;
         overflow: hidden;
+        font-size: 10px;
     }
     
     .landscape-desc {
